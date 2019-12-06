@@ -1,13 +1,182 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+    font-family: 'Myraid Pro Regular';
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+@font-face {
+    font-family: 'Cafe Nero M54';
+    src: url('./res/fonts/Cafe Nero M54.ttf');
 }
+
+@font-face {
+    font-family: 'Calculator';
+    src: url('./res/fonts/Calculator.ttf');
+}
+
+@font-face {
+    font-family: 'Myraid Pro Regular';
+    src: url('./res/fonts/Myraid Pro Regular.ttf');
+}
+
+@font-face {
+    font-family: 'MyriadPro-BlackSemiCn';
+    src: url('./res/fonts/MyriadPro-BlackSemiCn.otf');
+}
+
+.font-style-1{
+    font-family: 'Cafe Nero M54';
+}
+
+.font-style-2{
+    font-family: 'Calculator';
+}
+
+
+.bg-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+.forground-layout{
+    position: relative;
+    z-index: 1;
+    height:100vh;
+    background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,0.8743872549019608) 9%, rgba(0,0,0,0) 49%, rgba(0,0,0,0.9164040616246498) 89%);
+}
+
+.coustom-color{
+    background-color: rgb(148, 1, 1)!important;
+}
+
+/* Landing-Carousel */
+.Landing-Carousel{
+    background-image: url("./res/key.jpg");
+}
+
+
+.logo{
+    width: 100px;
+    height: 30px;
+}
+
+.qlogo{
+    width:50px;
+}
+
+.nav-link{
+    color: #a5a3a8 !important;
+}
+
+.navbar-nav{
+    margin-left: 17%;
+}
+
+.icon{
+    color:white;
+}
+
+.element-padding{
+    padding-top: 10%;
+}
+
+
+/* Portfolio */
+
+.Portfolio {
+    background-image: url('./res/bg1.png'); 
+}
+
+.card-bg{
+    background-color: rgba(0, 0, 0, 0.602)!important; 
+}
+
+
+/* service */
+
+.service{
+    background-image: url('./res/serve.png');
+}
+
+.services{
+    margin-left: 20%;
+    padding-top: 3%;    
+}
+
+.service-box{
+    height: 350px!important;
+    
+    background-color: rgba(0, 0, 0, 0.602)!important; 
+}
+
+/* Team */
+
+.Team{
+    background-image: url('./res/team.png');
+}
+
+.team-card{
+    padding-left: 20%;
+    padding-top: 5%;
+}
+.ceo{
+    width: 65%!important;
+    background-color: rgba(0, 0, 0, 0.63)!important;
+}
+
+/* Mission */
+
+.Mission{
+    background-image: url("./res/mission.png");
+    height: 80vh;
+}
+
+.mission-statement{
+    padding-top: 28%;
+}
+
+
+/* Footer */
+
+.Footer {
+    background-color:black;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    height: 9vh;
+  }
+
+.foot-icons{
+    padding-right:15%;
+}
+
+.foo-icon{
+    padding-left:35%;
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+    .bg-image-port {
+      height: 150vh;
+    }
+    .Portfolio .forground-layout{
+        height: 150vh;
+    }
+  }
+
+  @media screen and (max-width: 780px) {
+    .bg-image-port {
+      height: 300vh;
+    }
+    .Portfolio .forground-layout{
+        height: 300vh;
+    }
+  }
+
+  .bg-color{
+    background-color: rgba(0, 0, 0, 0.924)!important;
+  }
